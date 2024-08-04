@@ -6,32 +6,61 @@
   -moz-osx-font-smoothing: grayscale;
   list-style: none;
   text-decoration: none;
-  color: inherit;
+  color: var(--bg-dark);
+  font-size: 1.6rem;
+
+
 }
 html {
 	scroll-behavior: smooth;
-  	width: 100%;
-	height: 100%;
+  
 }
 :root {
   font-size: 62.5%;
   --bg-light: #fffAf0;
   --bg-dark: #4f4134;
-
+  --text-color-dark:#382e25;
   --primary-color:#af9174;
+	--secondary-color:#cbab86;
+	--tertiary-color:#CCA19B;
+
 }
 
 body {
   background-color:var(--bg-light)  ;
   font-size: 1.6rem;
+font-family: museo;
+
   text-align: center;
 	overflow: overlay;
-  	width: 100%;
+  width: 100%;
 	height: 100%;
+}
+p{
+font-family: museo;
+
 }
 img {
 	max-width: 100%;
 }
+h1{
+	font-size: 2.3rem;
+	color: var(--secondary-color);
+	font-family: rebeque;
+}
+h2{
+font-size: 2.3rem;
+color: var(--primary-color);
+font-family: rebeque;
+
+}
+h3{
+	font-size: 1.8rem;
+	color: var(--primary-color);
+	
+
+}
+
 /*================== mobile first============ */
 /* NAVIGATION */
 .wrapper {
@@ -43,12 +72,6 @@ img {
 nav {
 	display: flex;
 	width: 100vw;
-
-	position: fixed;
-	/* height: var(--nav-height); */
-	top: 0;
-
-	z-index: 100;
 }
 
 nav .wrapper {
@@ -57,9 +80,8 @@ nav .wrapper {
 	justify-content: space-between;
 
 }
-.nav-logo{
-  max-width: 180px;
-  height: auto;
+.logo{
+	margin-top: 1rem;
 }
 .div-wpp-icon svg{
   max-width: 38px;
@@ -85,8 +107,7 @@ nav .close-menu {
 }
 /* MENU EXPANDED */
 body.menu-expanded {
-	/* overflow: hidden; */
-  overflow: scroll;
+  overflow: overlay;
 }
 body.menu-expanded > :not(nav) {
 	visibility: hidden;
@@ -110,8 +131,7 @@ body.menu-expanded .close-menu{
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  /* justify-content: center;
-  align-items: baseline; */
+
   overflow: scroll;
 }
 body.menu-expanded .menu {
@@ -120,7 +140,6 @@ body.menu-expanded .menu {
 	background: var(--bg-dark);
 	width: 100vw;
 	height: 100vh;
-	padding-top: var(--nav-height);
 	transition: transform 300ms;
 	transform: translateY(0);
 }
@@ -163,6 +182,38 @@ margin-left: 1.5rem;
 .nav-menu-section.follow{
   margin-bottom: 1.5rem;
 }
+/*=========== SERVICE SECTION========= */
+#service {
+margin-top: 3rem;
+
+}
+.service-title > * {
+margin-bottom: 1.5rem;
+}
+.service-buttons{
+	width: 100%;
+	 
+	 /* border:3px solid red; */
+	 
+}
+#service button{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 95%;
+  margin-inline: auto;
+	height: fit-content;
+	text-align: start;
+	padding-inline: 1rem;
+	padding-block: 2rem;
+	background: none;
+	margin-block: 1rem;
+	border-width: 1px;
+	border-color: #cbab866f;
+	cursor: pointer;
+
+}
+
 /* =================tablet ==================*/
 @media (min-width:768px) {
   
