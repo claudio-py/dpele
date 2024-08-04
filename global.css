@@ -1,3 +1,4 @@
+/*================= GLOBAL SETTINGS=============== */
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +37,11 @@ font-family: museo;
   width: 100%;
 	height: 100%;
 }
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
 p{
 font-family: museo;
 
@@ -52,7 +58,7 @@ h2{
 font-size: 2rem;
 color: var(--primary-color);
 font-family: rebeque;
-
+line-height: 3.5rem;
 }
 h3{
 	font-size: 1.8rem;
@@ -60,7 +66,31 @@ h3{
 	
 
 }
+section button{
+	width: 58%;
+	height: fit-content;
+	text-align: start;
+	padding-inline: 1rem;
+	padding-block: 2rem;
+	margin-block: 1rem;
+	border-width: 1px;
+	border-color: #cbab866f;
+border-style: groove;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 
+section .infobox{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	text-align: start;
+	padding-inline: 1rem;
+	gap: 2rem;
+	margin-top: 2rem;
+}
 /*================== mobile first============ */
 /* NAVIGATION */
 .wrapper {
@@ -90,11 +120,7 @@ nav .wrapper {
 .div-wpp-icon svg path{
   fill: var(--primary-color);
 }
-nav button {
-	background: none;
-	border: none;
-	cursor: pointer;
-}
+
 nav button.open-menu svg path{
   stroke: var(--primary-color);
 }
@@ -191,30 +217,36 @@ margin-top: 3rem;
 .service-title > * {
 margin-bottom: 1.5rem;
 }
+
 .service-buttons{
 	width: 100%;
-	 
-	 
-	 
 }
 #service button{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	width: 95%;
   margin-inline: auto;
-	height: fit-content;
-	text-align: start;
-	padding-inline: 1rem;
-	padding-block: 2rem;
-	background: none;
-	margin-block: 1rem;
-	border-width: 1px;
-	border-color: #cbab866f;
-	cursor: pointer;
-
+}
+/* ================ABOUT=================== */
+#about{
+	margin-top: 5rem;
+}
+.about-entry{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	margin-bottom: 2rem;
+	padding-inline: 2rem;
+}
+.about-logo{
+	width: 5rem;
 }
 
+
+/* =====================LOCAL==================== */
+#local{
+	margin-top: 8rem;
+}
 /* =================tablet ==================*/
 @media (min-width:768px) {
   
