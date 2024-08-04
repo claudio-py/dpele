@@ -49,7 +49,7 @@ h1{
 	font-family: rebeque;
 }
 h2{
-font-size: 2.3rem;
+font-size: 2rem;
 color: var(--primary-color);
 font-family: rebeque;
 
@@ -143,31 +143,32 @@ body.menu-expanded .menu {
 	transition: transform 300ms;
 	transform: translateY(0);
 }
-.menu ul:nth-child(1) {
+.nav-menu-section.service-menu{
+	margin-top: 5rem;
+}
+.service-menu  ul:nth-child(2) {
 	display: flex;
 	flex-direction: column;
   align-items: start;
   justify-content: center;
 	gap: 1.8rem;
-	margin-top: 10rem;
 	font-size: 1.8rem;
-	font-weight: normal;
-	line-height: 1.8rem;
+ line-height: 1.8rem;
 
 }
 .menu ul li a {
-	text-decoration: none;
 	color: var(--bg-light);
-  margin-left: 1.5rem;
+  
   
 }
 .nav-menu-section{
    color: var(--primary-color);
 text-align: start;
-margin-left: 1.5rem;
+margin-left: 2.5rem;
 }
-.nav-menu-section h2{
+.nav-menu-section h3{
   margin-bottom: 1rem;
+	font-size: 2rem;
 }
 
 .nav-menu-section p{
@@ -193,7 +194,7 @@ margin-bottom: 1.5rem;
 .service-buttons{
 	width: 100%;
 	 
-	 /* border:3px solid red; */
+	 
 	 
 }
 #service button{
